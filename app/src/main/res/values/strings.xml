@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Google News</string>
+    <string name="favorite">Favorite</string>
+    <string name="news">News</string>
+</resources>
