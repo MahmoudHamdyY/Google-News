@@ -4,6 +4,7 @@ A sample android app that leverages the [News API](https://newsapi.org) to despl
 The app is composed of one screen. This screen displays a list of News, in which, each New is described by ites title, description and cover photo. Users allowed to favorite/unfavorite any New. Also they can filter the list so that it containing only those favorite News only.
 
 **News List**
+
 ![Imgur](http://funkyimg.com/i/2MUts.png)
 
 ## Overview
