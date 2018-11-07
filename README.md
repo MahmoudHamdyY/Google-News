@@ -38,7 +38,7 @@ The app tests five different components:
 Entirely written in [Java](https://www.java.com/en/).
 This app leverages two third-party libraries:
 
-* [Gson](https://github.com/google/gson) - Responsible for executing the API requests and retrieving the JSON.
+* [Gson](https://github.com/google/gson) - Java library that can be used to convert Java Objects into their JSON representation.
 * [Retrofit](http://square.github.io/retrofit/) - Type-safe HTTP client for Android and Java by Square.
 * [RxJava](https://github.com/ReactiveX/RxJava) - Java VM implementation of [Reactive Extensions](http://reactivex.io/): a library for composing asynchronous and event-based programs by using observable sequences.
 * [Okhttp 3](https://github.com/square/okhttp) - An HTTP+HTTP/2 client for Android and Java applications.
