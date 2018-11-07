@@ -10,5 +10,5 @@ public interface ApiService {
     @GET("v2/everything")
     Observable<ResponseItem> fetchNews(@Query("q") String keyWord, @Query("apikey") String apiKey,
                                        @Query("sources") String sources, @Query("language") String language,
-                                       @Query("page") int page);
+                                       @Query("page") int page, @Query("sortBy") String sortBy);
 }

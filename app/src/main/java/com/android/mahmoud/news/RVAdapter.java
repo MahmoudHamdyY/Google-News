@@ -86,7 +86,7 @@ public class RVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             notifyItemChanged(position);
         });
         viewHolder.divider.setText(item.getDate());
-        if (item.isDivider())
+        if (item.isDateVisible())
             viewHolder.divider.setVisibility(View.VISIBLE);
         else
             viewHolder.divider.setVisibility(View.GONE);

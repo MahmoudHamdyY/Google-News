@@ -24,11 +24,11 @@ public class NewsItem{
 
     private boolean isFavorite = false;
 
-    private boolean isDivider = false;
+    private boolean isDateVisible = false;
 
     NewsItem(NewsItem item) {
         this.title = item.title;
-        this.isDivider = item.isDivider;
+        this.isDateVisible = item.isDateVisible;
         this.publishedAt = item.publishedAt;
         this.isFavorite = item.isFavorite;
         this.urlToImage = item.urlToImage;
@@ -48,12 +48,12 @@ public class NewsItem{
         return isFavorite;
     }
 
-    public boolean isDivider() {
-        return isDivider;
+    public boolean isDateVisible() {
+        return isDateVisible;
     }
 
-    public void setDivider(boolean divider) {
-        isDivider = divider;
+    public void setDateVisible(boolean dateVisible) {
+        isDateVisible = dateVisible;
     }
 
     public void setFavorite(boolean favorite) {
@@ -128,14 +128,14 @@ public class NewsItem{
 
     static void setUpDividers(List<NewsItem> items) {
         if (!items.isEmpty())
-            items.get(0).setDivider(true);
+            items.get(0).setDateVisible(true);
 
         for (int i = 1; i < items.size(); i++) {
             // check if they are in different days to insert divider
             if (!items.get(i - 1).getDate().equals(items.get(i).getDate()))
-                items.get(i).setDivider(true);
+                items.get(i).setDateVisible(true);
             else
-                items.get(i).setDivider(false);
+                items.get(i).setDateVisible(false);
         }
 
     }

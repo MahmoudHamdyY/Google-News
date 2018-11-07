@@ -15,7 +15,7 @@ class NewsService {
 
     Observable<ResponseItem> loadItems(final int page)
     {
-        return Observable.defer(() -> apiService.fetchNews("Google", ApiKey, "usa-today", "en", page)
+        return Observable.defer(() -> apiService.fetchNews("Google", ApiKey, "usa-today", "en", page, "publishedAt")
                 .retryWhen(observable -> observable.flatMap(o -> {
                     if(o instanceof IOException) {
                         return Observable.just(null);

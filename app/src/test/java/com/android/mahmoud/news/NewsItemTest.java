@@ -47,11 +47,11 @@ public class NewsItemTest {
 
         NewsItem.setUpDividers(list);
 
-        assertTrue(list.get(0).isDivider());
-        assertFalse(list.get(1).isDivider());
-        assertTrue(list.get(2).isDivider());
-        assertTrue(list.get(3).isDivider());
-        assertTrue(list.get(4).isDivider());
+        assertTrue(list.get(0).isDateVisible());
+        assertFalse(list.get(1).isDateVisible());
+        assertTrue(list.get(2).isDateVisible());
+        assertTrue(list.get(3).isDateVisible());
+        assertTrue(list.get(4).isDateVisible());
 
     }
 
